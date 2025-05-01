@@ -75,7 +75,7 @@ p {
 
 img.portrait {
   max-width: 150px;  /* MENŠÍ profilovka */
-  border-radius: 50%; /* kruhový tvar */
+  border-radius: 12px; /* zaoblený rohy čtverec */
   margin: 0 1rem 1rem 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   float: left;
