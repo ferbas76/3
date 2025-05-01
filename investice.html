@@ -24,22 +24,20 @@
       <p data-aos="fade-up">Investice nejsou jen pro bohaté – jsou pro každého, kdo nechce, aby jeho peníze ztrácely hodnotu. V dnešním světě, kdy inflace ukusuje z každé koruny, je důležité nechat své peníze pracovat. Investování je způsob, jak si tvořit rezervy, plnit sny a zajistit budoucnost – pro sebe i své blízké.</p>
       <p data-aos="fade-up" data-aos-delay="200">Pomohu vám zorientovat se ve světě možností – od konzervativních řešení až po dynamické strategie. Společně nastavíme plán podle vašich potřeb a cílů. Ať už jde o zajištění dětí, budoucnost na důchod, nebo koupi vysněného bydlení, vše má své řešení. Investice nejsou složité – když je někdo umí vysvětlit srozumitelně a lidsky.</p>
       <p data-aos="fade-up" data-aos-delay="400">Mnoho klientů říká: „Škoda, že jsme nezačali dřív.“ Nečekejte na ideální moment. Ten může být právě teď. I malá, ale pravidelná investice může mít velkou sílu. Společně nastavíme smysluplný finanční plán, který vám přinese jistotu a klid.</p>
-      <div data-aos="fade-up" data-aos-delay="600">
-  <h2>Porovnání výnosů (2000–2024)</h2>
+     <div data-aos="fade-up" data-aos-delay="600">
+  <h2>Porovnání výnosů (2004–2025)</h2>
   <canvas id="srovnaniGraf" width="600" height="400"></canvas>
 </div>
 
-<!-- PRŮMĚRY POD GRAFEM (bez data-aos) -->
 <div style="margin-top: 2rem;">
-  <h3>Průměrné roční výnosy (2015–2024)</h3>
+  <h3>Průměrné roční výnosy (2004–2025)</h3>
   <ul style="list-style: none; padding: 0; color: #ccc;">
-    <li><strong>S&P 500:</strong> 10,7 %</li>
-    <li><strong>Inflace:</strong> 3,3 %</li>
-    <li><strong>Spořící účet:</strong> 1,3 %</li>
-    <li><strong>Stavební spoření:</strong> 1,5 %</li>
+    <li><strong>Dynamické ETF Portfolio:</strong> 9,4 %</li>
+    <li><strong>Inflace:</strong> 2,6 %</li>
+    <li><strong>Spořící účet (nejlepší):</strong> 2,3 %</li>
+    <li><strong>Stavební spoření:</strong> 1,9 %</li>
   </ul>
 </div>
-
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -47,13 +45,11 @@ const ctx = document.getElementById('srovnaniGraf').getContext('2d');
 const srovnaniGraf = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009',
-                 '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019',
-                 '2020', '2021', '2022', '2023', '2024'],
+        labels: ['2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'],
         datasets: [
             {
-                label: 'S&P 500',
-                data: [-9, -12, -22, 28, 10, 5, 16, 5, -37, 26, 15, 2, 16, 32, 14, 1, 12, 19, -6, 28, 16, 26, -18, 12, 15],
+                label: 'Dynamické ETF Portfolio',
+                data: [9.0,7.5,12.0,6.0,-30.0,22.0,13.0,0.5,11.0,26.0,9.5,1.0,8.0,15.0,-5.0,18.0,10.0,20.0,-12.0,7.0,9.0,10.0],
                 borderColor: '#4caf50',
                 backgroundColor: 'rgba(76,175,80,0.1)',
                 fill: true,
@@ -61,15 +57,15 @@ const srovnaniGraf = new Chart(ctx, {
             },
             {
                 label: 'Inflace',
-                data: [3.4, 2.8, 1.6, 2.3, 2.7, 3.4, 3.2, 2.8, 3.8, -0.4, 1.6, 3.2, 2.1, 1.5, 0.8, 0.3, 0.7, 2.1, 2.4, 1.8, 3.2, 5.4, 8.0, 6.5, 3.4],
+                data: [2.7,3.4,3.2,2.8,3.8,-0.4,1.6,3.2,2.1,1.5,0.8,0.3,0.7,2.1,2.4,1.8,3.2,5.4,8.0,6.5,3.4,3.0],
                 borderColor: '#f44336',
                 backgroundColor: 'rgba(244,67,54,0.1)',
                 fill: true,
                 tension: 0.3
             },
             {
-                label: 'Spořící účet',
-                data: [3.5, 3.0, 2.5, 2.0, 1.8, 1.5, 1.4, 1.6, 1.5, 1.2, 1.0, 1.0, 1.1, 1.0, 0.9, 0.5, 0.6, 0.7, 0.8, 1.0, 1.2, 1.5, 1.8, 2.0, 2.2],
+                label: 'Spořící účet (nejlepší)',
+                data: [1.8,1.5,1.4,1.6,1.5,1.2,1.0,1.0,1.1,1.0,0.9,0.5,0.6,0.7,0.8,1.0,1.2,1.5,1.8,2.0,2.2,2.3],
                 borderColor: '#2196f3',
                 backgroundColor: 'rgba(33,150,243,0.1)',
                 fill: true,
@@ -77,7 +73,7 @@ const srovnaniGraf = new Chart(ctx, {
             },
             {
                 label: 'Stavební spoření',
-                data: [4.0, 4.0, 4.0, 4.0, 3.8, 3.5, 3.2, 3.0, 3.0, 2.8, 2.8, 2.5, 2.5, 2.3, 2.3, 2.0, 1.8, 1.8, 1.7, 1.7, 1.6, 1.5, 1.5, 1.5, 1.5],
+                data: [3.8,3.5,3.2,3.0,3.0,2.8,2.8,2.5,2.5,2.3,2.3,2.0,1.8,1.8,1.7,1.7,1.6,1.5,1.5,1.5,1.5,1.5],
                 borderColor: '#ff9800',
                 backgroundColor: 'rgba(255,152,0,0.1)',
                 fill: true,
@@ -90,7 +86,7 @@ const srovnaniGraf = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Srovnání výnosů 2000–2024',
+                text: 'Porovnání výnosů (2004–2025)',
                 color: '#fff',
                 font: { size: 18 }
             },
@@ -105,6 +101,7 @@ const srovnaniGraf = new Chart(ctx, {
     }
 });
 </script>
+
 
     </section>
   </main>
