@@ -2,14 +2,13 @@
 <html lang="cs">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-38T6R4XWC1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-38T6R4XWC1');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-38T6R4XWC1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-38T6R4XWC1');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Úvěry</title>
@@ -20,7 +19,9 @@
 </head>
 <body>
   <header data-aos="fade-down">
-    <nav>
+    <div class="logo">DF</div>
+    <button class="menu-toggle" aria-label="Otevřít menu">&#9776;</button>
+    <nav class="nav-links">
       <a href="index.html">O mně</a>
       <a href="investice.html">Investování</a>
       <a href="pojisteni.html">Pojištění</a>
@@ -28,6 +29,7 @@
       <a href="spoluprace.html">Spolupráce</a>
     </nav>
   </header>
+
   <main data-aos="fade-up">
     <section>
       <h1 data-aos="fade-right">Úvěry</h1>
@@ -39,6 +41,7 @@
       </div>
     </section>
   </main>
+
   <footer data-aos="fade-up">
     <p>&copy; 2025 Dominik Ferbas</p>
   </footer>
@@ -47,6 +50,15 @@
     AOS.init({
       duration: 1000,
       once: true
+    });
+  </script>
+
+  <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
     });
   </script>
 </body>
