@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
@@ -7,9 +6,11 @@
   <title>Dominik Ferbas – Účetnictví & Finanční poradenství</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar" data-aos="fade-down">
     <div class="logo">DF</div>
     <nav>
       <a href="index.html" class="active">O mně</a>
@@ -21,9 +22,9 @@
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="hero" data-aos="fade-up">
       <img src="DSCF2244.jpg" alt="Dominik Ferbas" class="portrait">
-      <div>
+      <div data-aos="fade-up" data-aos-delay="200">
         <h1>Dominik Ferbas</h1>
         <h2>Účetnictví & Finanční poradenství</h2>
         <p class="lead">Komplexní a lidský přístup. Spolehlivý partner pro vaše peníze i podnikání.</p>
@@ -32,15 +33,15 @@
       </div>
     </section>
 
-    <section class="story">
+    <section class="story" data-aos="fade-up">
       <h2>Můj příběh</h2>
       <p>Od tří let jsem žil hokejem, který mě naučil disciplíně, cílevědomosti a týmovosti. Ve 21 letech jsem ukončil profesionální kariéru a navázal v naší rodinné firmě s více než 30letou tradicí v účetnictví.</p>
       <p>Postupně jsem vnímal, že klienti potřebují komplexní péči – nejen o čísla, ale i o finance jako celek. Proto jsem své služby rozšířil o finanční poradenství pod hlavičkou Prosperity FS.</p>
     </section>
 
-    <section class="certificates">
+    <section class="certificates" data-aos="fade-up">
       <h2>Certifikace</h2>
-      <div class="cert-grid">
+      <div class="cert-grid" data-aos="fade-up" data-aos-delay="200">
         <img src="certifikat_1.jpg" alt="Certifikát 1">
         <img src="certifikat_2.jpg" alt="Certifikát 2">
         <img src="certifikat_3.jpg" alt="Certifikát 3">
@@ -49,8 +50,15 @@
     </section>
   </main>
 
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2025 Dominik Ferbas – Všechna práva vyhrazena</p>
   </footer>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
