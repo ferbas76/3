@@ -8,8 +8,8 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #111;
-  color: #ddd;
+  background-color: #222;
+  color: #eee;
   animation: fadeIn 0.8s ease-in;
 }
 
@@ -19,9 +19,9 @@ body {
 }
 
 header {
-  background-color: #111;
+  background-color: #222;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #444;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -35,7 +35,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #ddd;
+  color: #eee;
   font-weight: 500;
   padding: 0.4rem 0.6rem;
   border-bottom: 2px solid transparent;
@@ -51,9 +51,9 @@ main {
   max-width: 960px;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #1a1a1a;
+  background-color: #2a2a2a;
   border-radius: 14px;
-  border: 1px solid #333;
+  border: 1px solid #444;
   animation: slideUp 1s ease;
 }
 
@@ -73,12 +73,20 @@ p {
   margin-bottom: 1rem;
 }
 
+img.portrait {
+  max-width: 150px;  /* MENŠÍ profilovka */
+  border-radius: 50%; /* kruhový tvar */
+  margin: 0 1rem 1rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  float: left;
+}
+
 form {
   margin-top: 2rem;
-  background-color: #222;
+  background-color: #333;
   padding: 1.5rem;
   border-radius: 10px;
-  border: 1px solid #333;
+  border: 1px solid #444;
   animation: fadeInUp 1.2s ease;
 }
 
@@ -91,8 +99,8 @@ input, textarea {
   width: 100%;
   padding: 1rem;
   margin: 0.6rem 0;
-  background-color: #111;
-  border: 1px solid #444;
+  background-color: #2a2a2a;
+  border: 1px solid #555;
   border-radius: 6px;
   color: #eee;
   font-size: 1rem;
@@ -101,14 +109,14 @@ input, textarea {
 input:focus, textarea:focus {
   border-color: #fff;
   outline: none;
-  box-shadow: 0 0 0 2px rgba(255,255,255,0.15);
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
 }
 
 button {
   width: 100%;
   padding: 1rem;
   margin-top: 1rem;
-  background: #000;
+  background: #333;
   color: #fff;
   font-weight: 600;
   border: 1px solid #444;
@@ -118,16 +126,16 @@ button {
 }
 
 button:hover {
-  background: #222;
+  background: #444;
   transform: translateY(-2px);
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  color: #555;
+  color: #888;
   font-size: 0.9rem;
-  border-top: 1px solid #333;
+  border-top: 1px solid #444;
 }
 
 nav a.active {
@@ -137,7 +145,7 @@ nav a.active {
 .certificate-gallery img {
   width: 220px;
   border-radius: 10px;
-  border: 1px solid #333;
+  border: 1px solid #444;
   transition: transform 0.3s ease;
 }
 
@@ -148,5 +156,5 @@ nav a.active {
 .cert-grid img {
   width: 120px;
   border-radius: 6px;
-  border: 1px solid #333;
+  border: 1px solid #444;
 }
