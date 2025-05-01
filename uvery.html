@@ -6,27 +6,36 @@
   <title>Úvěry</title>
   <meta name="description" content="Jak správně využít hypotéku k vybudování vlastního majetku a finanční stability.">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <nav>
       <a href="index.html">O mně</a>
       <a href="investice.html">Investování</a>
       <a href="pojisteni.html">Pojištění</a>
-      <a href="uvery.html">Úvěry</a>
+      <a href="uvery.html" class="active">Úvěry</a>
       <a href="spoluprace.html">Spolupráce</a>
     </nav>
   </header>
-  <main>
-    <section class="fade-in">
-      <h1>Úvěry</h1>
-      <p>Vlastní bydlení není jen otázkou komfortu, ale především strategického finančního rozhodnutí. Hypotéka není dluh, ale investice do vaší budoucnosti. Zatímco ceny nájmů neustále rostou, splátka hypotéky zůstává stabilní, a navíc postupně budujete svůj vlastní majetek.</p>
-      <p>Čekat na ideální čas? Ceny nemovitostí historicky rostou. Správně nastavená hypotéka vám umožní využít aktuálních podmínek a zabezpečit si vlastní domov i finanční jistotu. Pomohu vám s výběrem úvěru tak, aby odpovídal vašim možnostem i plánům do budoucna.</p>
-      <p>V důchodu nechcete platit nájem, který se stále zvyšuje. Chcete bydlet ve vlastním, bez starostí a s klidem na rentu. Včasné řešení hypotéky je krokem k finanční nezávislosti, kterou si zasloužíte.</p>
+  <main data-aos="fade-up">
+    <section>
+      <h1 data-aos="fade-right">Úvěry</h1>
+      <p data-aos="fade-up">Vlastní bydlení není jen otázkou komfortu, ale především strategického finančního rozhodnutí. Hypotéka není dluh, ale investice do vaší budoucnosti. Zatímco ceny nájmů neustále rostou, splátka hypotéky zůstává stabilní, a navíc postupně budujete svůj vlastní majetek.</p>
+      <p data-aos="fade-up" data-aos-delay="200">Čekat na ideální čas? Ceny nemovitostí historicky rostou. Správně nastavená hypotéka vám umožní využít aktuálních podmínek a zabezpečit si vlastní domov i finanční jistotu. Pomohu vám s výběrem úvěru tak, aby odpovídal vašim možnostem i plánům do budoucna.</p>
+      <p data-aos="fade-up" data-aos-delay="400">V důchodu nechcete platit nájem, který se stále zvyšuje. Chcete bydlet ve vlastním, bez starostí a s klidem na rentu. Včasné řešení hypotéky je krokem k finanční nezávislosti, kterou si zasloužíte.</p>
     </section>
   </main>
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2025 Dominik Ferbas</p>
   </footer>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
