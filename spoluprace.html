@@ -21,10 +21,10 @@
   </header>
   <main>
     <section>
-      <h1>Spolupráce</h1>
+      <h1 data-aos="fade-right">Spolupráce</h1>
       <p>Hledáte partnera, kterému můžete důvěřovat? Jsem tu pro vás – ať už chcete řešit investice, pojištění, nebo účetnictví. Nabízím nezávaznou úvodní schůzku, kde probereme vaše potřeby a cíle.</p>
-      <p>Zanechte mi na sebe kontakt, ozvu se vám co nejdříve:</p>
-      <form action="https://formspree.io/f/mrbqewol" method="POST">
+      <p data-aos="fade-up" data-aos-delay="200">Zanechte mi na sebe kontakt, ozvu se vám co nejdříve:</p>
+      <form action="https://formspree.io/f/mrbqewol" method="POST" data-aos="fade-up">
         <input type="text" name="name" placeholder="Vaše jméno" required>
         <input type="tel" name="phone" placeholder="Telefonní číslo" required>
         <input type="email" name="email" placeholder="Email" required>
@@ -36,5 +36,12 @@
   <footer>
     <p>&copy; 2025 Dominik Ferbas</p>
   </footer>
+  
+  <script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 </body>
 </html>
