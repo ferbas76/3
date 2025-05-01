@@ -58,30 +58,41 @@
             data: {
                 labels: ['2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'],
                 datasets: [
-                    {
-                        label: 'Dynamické ETF Portfolio',
-                        data: [9.0,7.5,12.0,6.0,-30.0,22.0,13.0,0.5,11.0,26.0,9.5,1.0,8.0,15.0,-5.0,18.0,10.0,20.0,-12.0,7.0,9.0,10.0],
-                        borderColor: '#4caf50',
-                        backgroundColor: 'rgba(76,175,80,0.1)',
-                        fill: true,
-                        tension: 0.3
-                    },
-                    {
-                        label: 'Inflace',
-                        data: [2.7,3.4,3.2,2.8,3.8,-0.4,1.6,3.2,2.1,1.5,0.8,0.3,0.7,2.1,2.4,1.8,3.2,5.4,8.0,6.5,3.4,3.0],
-                        borderColor: '#f44336',
-                        backgroundColor: 'rgba(244,67,54,0.1)',
-                        fill: true,
-                        tension: 0.3
-                    },
-                    {
-                        label: 'Spořící účet',
-                        data: [1.8,1.5,1.4,1.6,1.5,1.2,1.0,1.0,1.1,1.0,0.9,0.5,0.6,0.7,0.8,1.0,1.2,1.5,1.8,2.0,2.2,2.3],
-                        borderColor: '#2196f3',
-                        backgroundColor: 'rgba(33,150,243,0.1)',
-                        fill: true,
-                        tension: 0.3
-                    },
-                    {
-                        label: 'Stavební spoření',
-                        data: [3.8,3.5,3.2,3.0,3]()
+                    { label: 'Dynamické ETF Portfolio', data: [9.0,7.5,12.0,6.0,-30.0,22.0,13.0,0.5,11.0,26.0,9.5,1.0,8.0,15.0,-5.0,18.0,10.0,20.0,-12.0,7.0,9.0,10.0], borderColor: '#4caf50', backgroundColor: 'rgba(76,175,80,0.1)', fill: true, tension: 0.3 },
+                    { label: 'Inflace', data: [2.7,3.4,3.2,2.8,3.8,-0.4,1.6,3.2,2.1,1.5,0.8,0.3,0.7,2.1,2.4,1.8,3.2,5.4,8.0,6.5,3.4,3.0], borderColor: '#f44336', backgroundColor: 'rgba(244,67,54,0.1)', fill: true, tension: 0.3 },
+                    { label: 'Spořící účet', data: [1.8,1.5,1.4,1.6,1.5,1.2,1.0,1.0,1.1,1.0,0.9,0.5,0.6,0.7,0.8,1.0,1.2,1.5,1.8,2.0,2.2,2.3], borderColor: '#2196f3', backgroundColor: 'rgba(33,150,243,0.1)', fill: true, tension: 0.3 },
+                    { label: 'Stavební spoření', data: [3.8,3.5,3.2,3.0,3.0,2.8,2.8,2.5,2.5,2.3,2.3,2.0,1.8,1.8,1.7,1.7,1.6,1.5,1.5,1.5,1.5,1.5], borderColor: '#ff9800', backgroundColor: 'rgba(255,152,0,0.1)', fill: true, tension: 0.3 }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Porovnání výnosů (2004–2025)', color: '#fff', font: { size: 18 } },
+                    legend: { labels: { color: '#ccc' } }
+                },
+                scales: { x: { ticks: { color: '#ccc' }, grid: { color: '#444' } }, y: { ticks: { color: '#ccc' }, grid: { color: '#444' } } }
+            }
+        });
+      </script>
+
+      <a href="spoluprace.html" class="cta-button">Chci nezávaznou konzultaci</a>
+    </section>
+  </main>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Dominik Ferbas</p>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
