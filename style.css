@@ -283,25 +283,26 @@ footer {
   margin: 2rem 0;
   font-size: 1rem;
   text-align: center;
+  color: #f0f0f0;
 }
 
 .comparison-table th,
 .comparison-table td {
-  border: 1px solid #ddd;
+  border: 1px solid #444;
   padding: 12px;
 }
 
 .comparison-table thead {
-  background-color: #333;
+  background-color: #222;
   color: #fff;
 }
 
-.comparison-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+.comparison-table tbody tr {
+  background-color: #333;
 }
 
-.comparison-table tr:hover {
-  background-color: #ddd;
+.comparison-table tbody tr:hover {
+  background-color: #444;
 }
 
 @media (max-width: 600px) {
@@ -328,5 +329,6 @@ footer {
     padding-left: 15px;
     font-weight: bold;
     text-align: left;
+    color: #ccc;
   }
 }
