@@ -5,10 +5,12 @@
      and oranžovou pro akcent a energii */
   --primary-bg-start: #0b3d91; /* dark blue symbolising trust */
   --primary-bg-end: #00a8c5;   /* teal for fresh and friendly vibe */
-  --header-bg: rgba(11, 61, 145, 0.9);
+  --primary-bg-mid: #6a00ff; /* accent purple */
+  --header-bg: linear-gradient(90deg, var(--primary-bg-start), var(--primary-bg-mid));
   --text-color: #ffffff;
   --muted-text: #e1f5fe;
   --accent: #ff9800;           /* warm orange CTA */
+  --accent-2: #ff5e6c; /* secondary accent */
   --card-bg: rgba(255, 255, 255, 0.1);
   --border-color: rgba(255, 255, 255, 0.25);
 }
@@ -25,15 +27,22 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, var(--primary-bg-start), var(--primary-bg-end));
+  background: linear-gradient(135deg, var(--primary-bg-start), var(--primary-bg-mid), var(--primary-bg-end));
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite, fadeIn 0.8s ease-in;
   color: var(--text-color);
-  animation: fadeIn 0.8s ease-in;
   min-height: 100vh;
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 header {
@@ -65,10 +74,9 @@ header {
 }
 
 .nav-links a:hover {
-  color: var(--text-color);
-  border-bottom: 2px solid var(--accent);
+  color: var(--accent-2);
+  border-bottom: 2px solid var(--accent-2);
 }
-
 main {
   max-width: 960px;
   margin: 3rem auto;
@@ -138,7 +146,7 @@ button {
   width: 100%;
   padding: 1rem;
   margin-top: 1rem;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
   color: var(--text-color);
   font-weight: 600;
   border: none;
@@ -148,7 +156,7 @@ button {
 }
 
 button:hover {
-  background: #e68900;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
   transform: translateY(-2px);
 }
 
@@ -161,7 +169,7 @@ footer {
 }
 
 .nav-links a.active {
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent-2);
 }
 
 .certificate-gallery img {
@@ -183,7 +191,7 @@ footer {
 
 .cta-button {
   display: inline-block;
-  background-color: var(--accent);
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
   color: var(--text-color);
   font-weight: 600;
   text-decoration: none;
@@ -194,7 +202,11 @@ footer {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.cta-button:hover {
+button:hover {
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  transform: translateY(-2px);
+}
+}
   background-color: #e68900;
   transform: translateY(-2px);
 }
