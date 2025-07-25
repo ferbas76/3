@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Účetnictví</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+  <header class="navbar" data-aos="fade-down">
+    <div class="logo">DF</div>
+    <button class="menu-toggle" aria-label="Otevřít menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">O mně</a>
+      <a href="investice.html">Investování</a>
+      <a href="pojisteni.html">Pojištění</a>
+      <a href="uvery.html">Úvěry</a>
+      <a href="ucetnictvi.html" class="active">Účetnictví</a>
+      <a href="spoluprace.html">Spolupráce</a>
+    </nav>
+  </header>
+  <main data-aos="fade-up">
+    <section>
+      <h1 data-aos="fade-right">Účetnictví</h1>
+      <p data-aos="fade-up">Ve světě podnikání má každý den jen omezený počet hodin. Svěřte vedení účetnictví profesionálům a soustřeďte se na to, co děláte nejlépe. Jako externí účetní zajistím kompletní zpracování účetnictví i daňové evidence.</p>
+      <p data-aos="fade-up" data-aos-delay="200">Postarám se o komunikaci s úřady i hlídání všech termínů. Díky rodinné tradici a více než třicetiletým zkušenostem v oboru nabízím osobní přístup a pečlivé vedení dokladů.</p>
+      <p data-aos="fade-up" data-aos-delay="400">Ať jste drobný podnikatel nebo firma, služby přizpůsobím vašim potřebám. Rád s vámi proberu možnosti spolupráce a ukážu, jak může externí vedení účetnictví ušetřit čas i peníze.</p>
+      <div data-aos="fade-up" data-aos-delay="600">
+        <a href="spoluprace.html" class="cta-button">Chci nezávaznou konzultaci</a>
+      </div>
+    </section>
+  </main>
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Dominik Ferbas</p>
+  </footer>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
