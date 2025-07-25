@@ -67,9 +67,10 @@ header {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  background-color: #000;
 }
 
 .hero-section::after {
@@ -138,6 +139,12 @@ footer {
   grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
   gap: 1rem;
   justify-items: center;
+}
+
+.cert-grid img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
 }
 
 .lightbox {
