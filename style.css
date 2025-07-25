@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --primary-bg-start: #1f1c2c;
-  --primary-bg-end: #928dab;
-  --header-bg: rgba(31, 28, 44, 0.9);
-  --text-color: #f5f5f5;
-  --muted-text: #e0e0e0;
-  --accent: #ff6b6b;
-  --card-bg: rgba(255, 255, 255, 0.08);
-  --border-color: rgba(255, 255, 255, 0.15);
+  /* Modern, energetic colour palette using blue/teal for důvěryhodnost
+     and oranžovou pro akcent a energii */
+  --primary-bg-start: #0b3d91; /* dark blue symbolising trust */
+  --primary-bg-end: #00a8c5;   /* teal for fresh and friendly vibe */
+  --header-bg: rgba(11, 61, 145, 0.9);
+  --text-color: #ffffff;
+  --muted-text: #e1f5fe;
+  --accent: #ff9800;           /* warm orange CTA */
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --border-color: rgba(255, 255, 255, 0.25);
 }
 
 * {
@@ -146,7 +148,7 @@ button {
 }
 
 button:hover {
-  background: #e55f5f;
+  background: #e68900;
   transform: translateY(-2px);
 }
 
@@ -193,7 +195,7 @@ footer {
 }
 
 .cta-button:hover {
-  background-color: #e55f5f;
+  background-color: #e68900;
   transform: translateY(-2px);
 }
 
@@ -299,6 +301,23 @@ footer {
   list-style: none;
   padding: 0;
   color: var(--muted-text);
+}
+
+.why {
+  margin-top: 2rem;
+}
+
+.why li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.why li::before {
+  content: '✔';
+  color: var(--accent);
+  position: absolute;
+  left: 0;
 }
 
 .summary {
