@@ -1,7 +1,8 @@
 :root {
   --background: #ffffff;
   --text-color: #222;
-  --accent: #007bff;
+  --primary: #0d2b4f;
+  --accent: #c59d42;
   --light-bg: #f8f9fa;
   --nav-height: 60px;
 }
@@ -17,7 +18,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  background: var(--background);
+  background: var(--primary);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 1000;
 }
@@ -30,15 +31,37 @@ header {
   height: var(--nav-height);
 }
 
+.logo {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.byline {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
 .nav-links {
   display: flex;
   gap: 1rem;
 }
 
 .nav-links a {
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
+}
+
+.nav-links .cta {
+  background: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.nav-links .cta:hover {
+  background: #b48b34;
 }
 
 .nav-links a.active,
@@ -55,8 +78,9 @@ header {
 
 @media (max-width: 768px) {
   .menu-toggle { display: block; }
-  .nav-links { display: none; flex-direction: column; background: var(--background); position: absolute; top: var(--nav-height); right: 0; left: 0; padding: 1rem; }
+  .nav-links { display: none; flex-direction: column; background: var(--primary); position: absolute; top: var(--nav-height); right: 0; left: 0; padding: 1rem; }
   .nav-links.show { display: flex; }
+  .byline { display: none; }
 }
 
 .hero-section {
@@ -106,6 +130,10 @@ header {
   margin-top: 1rem;
 }
 
+.cta-button:hover {
+  background: #b48b34;
+}
+
 .section {
   padding: 3rem 0;
 }
@@ -122,6 +150,17 @@ header {
   border-radius: 6px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.benefits {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0 0;
+}
+
+.benefits li::before {
+  content: '\2713\0020';
+  color: var(--accent);
 }
 
 .card i {
